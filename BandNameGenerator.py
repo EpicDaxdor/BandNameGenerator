@@ -15,10 +15,9 @@ nouns = [
 # Define a function to generate a band name
 
 def generate_band_name():
-  adjective = random.choice(adjectives)
-  noun = random.choice(nouns)
-
-return f"{adjective} {noun}"
+    adjective = random.choice(adjectives)
+    noun = random.choice(nouns)
+    return f"{adjective} {noun}"
 
 # generate multiple band names
 for _ in range(10):
