@@ -1,0 +1,63 @@
+import time
+
+print("Welcome to the Deadly Escape.")
+time.sleep(3)
+print("Your mission is to escape this place ALIVE!.")
+time.sleep(3)
+print("You wake up in a bed fully clothed with no memory of how you got there or where you are. The room is square with no other furniture and has dark brown walls and one large dirty window.")
+time.sleep(3)
+print("You look around. You don\'t recognise anything and you have no personal posessions in the room. ")
+time.sleep(3)
+print("You climb out of bed. What do you want to do first? ")
+time.sleep(3)
+choice1 = input('Head over to the DOOR by typing "door", or move towards the WINDOW by typing "window". \n').lower()
+
+if choice1 == "door":
+    print("As you grab the door handle you noticed that it was ice cold, so cold infact that it gives you goosebumps.")
+    time.sleep(3)
+    print("You pull firmly but the door is heavy and sticky like there is a force pulling on the other side. The door opens slowly with a loud and rusty creeking noise.")
+    time.sleep(3)
+    print("As the door opens, it reveales a long dim lighted hallway.")   
+else:
+    print("You head over to the window, it is locked and at closer inspection the glass is fire glass and therefore unbreakable.")
+    time.sleep(3)
+    print("Outside of the window is pure blackness, no sky, no trees, no buildings and no lights of any kind.")
+    time.sleep(3)
+    print("All that is visible to you is your own reflection in the glass.")
+    time.sleep(3)
+    print("SUDDENLY !! there is a growling noise right next to your ear that makes the hairs on your neck stick up and your heart to race.")
+    time.sleep(3)
+    print("In a panic you look around. You see nothing useful, You look for a phone with no luck. Your only option is to use the door.")
+    time.sleep(3)
+    print("You move slowly towards the door.")
+    time.sleep(3)
+    print("As you grab the door handle you noticed that it was ice cold, so cold that it gave you goosebumps.")
+    time.sleep(3)
+    print("You pull firmly but the door is heavy and sticky like there is a force pulling on the other side. The door opens with a loud and rusty creaking noise.")
+    time.sleep(3)
+    print("As the door opens, it reveales a long dim lighted hallway.")
+
+time.sleep(3)
+print("You poke your head out looking left and right down the hallway but are unable to see the end of either corridor. With hesitance you step out into the hallway and you hear a loud high pitch scream seemingly coming from everywhere.")
+time.sleep(3)
+print("You turn to run back into the room but the heavy door slams closed behind you with a deafening thud!")
+time.sleep(3)
+print("Everything is silent for a few moments, then you hear what sounds like gears moving in the walls. You place your ear against the wall to hear better but when you do, the gears stop for a few seconds then there is a very loud mechanical CLICK! ")
+time.sleep(3)
+print("The lights that are dimmly lighting the hallway start to turn off systematiclly. As you look down the hallway in both direction's, the lights in the distance turn off, placing the corridor in blackness and that blackness is moving towards you.")
+time.sleep(3)
+print("With each light that goes out as it moves towards you, gets faster and faster")
+
+choice2 = input('What do you do ??, type "left" to run down the left corridor. Type "right" to run down the right corridor.')
+
+if choice2 == "left":
+   print("As your adrenaline kicks in, you sprint off down the corridor, struggling to breath.")
+   time.sleep(3)
+   print("As you run, all sounds fall into complete silence which causes you to stop running and listen intently. After a few seconds you begin to hear whispers, growling, snarling and howling.")
+   time.sleep(3)
+   print("You start to run again, stubbling over your own feet. Your crying and struggling to breath. You see a dimly light green sign hanging from the ceiling about 100 feet in front of you. The sign reads 'FIRE EXIT'.")
+   time.sleep(3)
+   print("As you come to the end of the corridor, everything is in complete darkness and the only light is from the sign above you")
+else:
+    print("Game Over!")
+    
