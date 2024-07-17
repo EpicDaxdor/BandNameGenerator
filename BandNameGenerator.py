@@ -1,20 +1,23 @@
 import random
 
-# List of adjectives
-adjectives = ['Cosmic', 'Ethereal', 'Sonic', 'Chromatic', 'Euphonic', 'Resonant', 'Harmonic', 'Melodic']
+# Expanded lists
+adjectives = ['Flying', 'Red', 'Silent', 'Broken', 'Dark', 'Mysterious', 'Wild', 'Happy', 'Electric', 'Golden', 'Ancient', 'Loud']
+nouns = ['Dragons', 'Wolves', 'Pirates', 'Stars', 'Echoes', 'Storms', 'Mirrors', 'Voices', 'Giants', 'Rangers', 'Warriors', 'Knights']
+verbs = ['Whispering', 'Singing', 'Roaring', 'Dancing', 'Raging', 'Dreaming']
+places = ['Mountain', 'Forest', 'Ocean', 'Sky', 'Desert', 'River']
 
-# List of nouns
-nouns = ['Stardust', 'Horizon', 'Vortex', 'Spectrum', 'Amplitude', 'Resonance', 'Cadence', 'Crescendo']
-
+# Function to generate band names with different patterns
 def generate_band_name():
-    # Randomly select an adjective and a noun
-    adjective = random.choice(adjectives)
-    noun = random.choice(nouns)
-    
-    # Combine the adjective and noun to form the band name
-    band_name = f"{adjective} {noun}"
-    
-    return band_name
+    pattern = random.choice(['Adjective Noun', 'Noun and Noun', 'Verb Noun', 'Noun of Place'])
+    if pattern == 'Adjective Noun':
+        return f"{random.choice(adjectives)} {random.choice(nouns)}"
+    elif pattern == 'Noun and Noun':
+        return f"{random.choice(nouns)} and {random.choice(nouns)}"
+    elif pattern == 'Verb Noun':
+        return f"{random.choice(verbs)} {random.choice(nouns)}"
+    elif pattern == 'Noun of Place':
+        return f"{random.choice(nouns)} of the {random.choice(places)}"
 
-# Generate and print a band name
-print("Your new band name is:", generate_band_name())
+# Generate a few band names
+for _ in range(10):
+    print(generate_band_name())
