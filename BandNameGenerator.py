@@ -4,7 +4,7 @@ import random
 adjectives = ['Flying', 'Red', 'Silent', 'Broken', 'Dark', 'Mysterious', 'Wild', 'Happy', 'Electric', 'Golden', 'Ancient', 'Loud']
 nouns = ['Dragons', 'Wolves', 'Pirates', 'Stars', 'Echoes', 'Storms', 'Mirrors', 'Voices', 'Giants', 'Rangers', 'Warriors', 'Knights']
 verbs = ['Whispering', 'Singing', 'Roaring', 'Dancing', 'Raging', 'Dreaming']
-places = ['Mountain', 'Forest', 'Ocean', 'Sky', 'Desert', 'River']
+places = ['Mountain', 'Forest', 'Ocean', 'Sky', 'Desert', 'River', 'Canyon', 'Beach', 'Lake']
 
 # Function to generate band names with different patterns
 def generate_band_name():
